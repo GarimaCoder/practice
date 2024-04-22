@@ -1,0 +1,11 @@
+.main{
+    background-color: rgb(247, 170, 69);
+    height: 500px;
+    width: auto;
+}
+.box{background-color: rgb(244, 35, 35);
+    margin: 10px;
+    height: 100px;
+    width: 100px;  
+    display: inline-block;
+}

@@ -1,0 +1,66 @@
+.main{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+    gap : 5px;
+    height:auto;
+  
+}
+.box{
+    background-color: red;
+   height: 100px;
+   width:180px;
+   margin :5px;
+
+}
+.box1:hover{
+    background-color: blue;
+    height:200px ;
+    width:200px;
+    border-radius: 50%;
+    transition:all 1s ease 0s;
+    transform: scale(1.05);
+    transform: rotate(20deg);
+  
+}
+.boxx{
+    background-color: rgb(30, 154, 59);
+     border-radius: 50%;
+    transition:all 5s ease 0s;
+}
+.boxx:hover{
+    background-color: blue;
+    border-radius: 50%;
+    transition:all 5s ease 0s;
+    transform: translate(200px ,-150px) scale(1.25);
+    }
+    .ani{
+        animation-name: garima;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes garima {
+        0%{
+            height: 300px;width:300px;
+            border-radius: 50%;
+           background-color: yellowgreen;
+        }
+        30%{
+            height: 100px;width:100px;
+            background-color: rgb(203, 58, 29);
+            border-radius: 50%;
+            transform: translate(400px,40px);
+        }
+        60%{
+            height: 250px;width:250px;
+            background-color: rgb(86, 231, 239);
+            border-radius: 50%;
+            transform: translate(200px,400px);
+        }
+        100%{ height: 50px;width:50px;
+            background-color: rgb(203, 29, 168);
+            border-radius: 50%;
+            transform: translate(-20px, 200px);
+        }
+    }

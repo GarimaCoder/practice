@@ -1,0 +1,53 @@
+.main{
+   display:flex; 
+    gap : 5px;
+    height:auto;
+  
+}
+.box1{
+    background-color: red;
+   height: 100px;
+   width:180px;
+   margin :5px;
+   border-radius: 50%;
+animation: fallingBall1 3s steps(20) 1s infinite alternate;
+animation-fill-mode: both;
+}
+.box2{
+    background-color: rgb(110, 103, 241);
+   height: 100px;
+   width:180px;
+   margin :5px;
+   border-radius: 50%;
+animation: fallingBall1 3s ease-in-out 1s infinite alternate-reverse;
+animation-fill-mode: both;
+}
+@keyframes fallingBall1 {
+    0%{
+      position:relative;
+       top: 0px;
+    }50%{
+        position:relative;
+       top: 50vh;
+       background-color: black;
+    }
+   
+    100%{
+        position:relative;
+        top: 90vh;
+    }
+}
+
+
+.box:hover{
+    background-color: blue;
+    height:200px ;
+    width:200px;
+    border-radius: 50%;
+    
+    transition:all 1s ease 0s;
+   
+    transform: scale(1.05);
+    transform: rotate(20deg);
+      
+}

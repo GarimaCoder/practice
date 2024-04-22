@@ -1,0 +1,8 @@
+.btn-primary{
+    background-color:rgb(184, 54, 75) !important;
+    transition: all 2s ease;
+}
+.btn:hover{
+    transform: scale(2.05) translate(100px,100px);
+
+}

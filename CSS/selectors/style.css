@@ -1,0 +1,108 @@
+*{
+background-color: rgb(248, 247, 247);
+}
+body{
+
+    background-color: rgb(183, 191, 191);
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   font-style: normal;
+   height: 500px;;
+}
+div{
+  
+    background-color: hsla(314, 61%, 33%, 0.927);
+    border: 2px solid blue;
+   padding: 10px;
+   margin: 10px;
+   font-weight: 550;
+   color:black;
+   height: 50px;
+   width: 400px;
+   
+}
+.box {
+    background-color: rgb(206, 164, 186);
+    color: red;
+}
+.first{
+    color: green;
+}
+#second{
+    background-image:url(Garima.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(136, 183, 183);
+}
+
+div p,a{/* if we give div>p then all p who are direct child will aquire the 
+property of div if we want grand child too aquire same property use div space p*/
+    color: blueviolet;
+}
+input[type="text"]/*property selector*/
+{
+    background-color: aqua;
+}
+.box p{/*chain selector*/
+    color:red;
+}
+#second p,h1{/*chain selector*/
+    color:blue;
+    background-image: none;
+}
+div[class="box "]{/*property selector*/
+    background-color: orange;
+}
+#second:hover{
+    background-image: none;
+    background-color: blueviolet;
+}
+input:required{
+    background-color: yellowgreen;
+}
+input:optional{
+    font-size: x-large;
+    background-color: rgb(222, 129, 129);
+}
+/* div:hover{
+    background-color:aqua;
+} */
+a:visited{
+    color: rgb(255, 3, 179);
+}
+a:active{
+    color:palegreen;
+}
+input:focus{
+    color: red;
+}
+div:empty{
+    background-color: rgb(35, 182, 187);
+}
+div:nth-child(1){
+    color: blue;
+}
+div:nth-of-type(1){
+    background-image: url(Garima.jpg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main{
+    border:2px solid red;
+}
+div:nth-last-of-type(1){
+    background-color:yellow;
+}
+/*Psuedeo classes*/
+#para::first-letter{
+color: blue;
+font-size: x-large;
+font-weight: 700;
+}
+#para::first-line{
+    text-decoration:underline;
+    color: aqua;
+    content: "garima";
+}
+#para::before{
+    content: "hello  h";
+}

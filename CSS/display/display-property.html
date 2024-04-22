@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:220px;
+  background-color:#FFFFFF;
+}
+
+p { 
+  background-color: blue;
+  padding: 10px;
+  margin: 20px;  
+  display:list-item;
+}
+
+ span {
+  background-color: red;
+  padding: 10px;  
+  color: white;
+  margin:2px;
+}
+.box{
+    background-color: rgb(255, 174, 0);
+  padding: 10px;  
+  color: white;
+  margin:5px;
+    height:60px;
+    width:60px;
+}
+.box1{
+
+    flex: 2 1 100px;
+}
+.box2{
+    flex : 1 1 100px;
+}
+ t{ background-color: blue;
+  padding: 10px;
+  margin: 10px;  
+  display:table;
+
+}
+f{
+    background-color: blue;
+  height: 250;;
+  margin: 1px;  
+  gap: 10px;
+  display:flex;
+  flex-flow: row wrap;
+ 
+  /* flex-direction:row;  
+  flex-wrap: wrap; */
+ 
+  justify-content: center;
+  align-items: center;
+ 
+}
+g{
+    background-color: blue;
+  padding: 10px;
+  margin: 10px;  
+  display:grid;   
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+.one{
+  grid-column: 1/3;
+}
+.two{
+  grid-row:2/4;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The display-list items property</h1>
+
+<div id="myDIV">
+<!--displaying list items-->
+<p>
+  <span>Text 1</span>
+    <span>Text 2</span>
+  <span>Text 3</span>
+</p>
+<p>
+  <span>Text 1</span>
+  <span>Text 2</span>
+  <span>Text 3</span>
+</p>
+</div>
+
+<h1>The display- Table property</h1>
+<!--displaying table-->
+<div id="myDIV" >
+    <t>
+        <span>Td 11</span>
+        <span>Td 12</span>
+        <span>Td 13</span>
+     </t>
+     <t>
+        <span>Td 21</span>
+        <span>Td 22</span>
+        <span>Td 23</span>
+     </t>
+
+</div>
+<h1>The display- flex property</h1>
+
+<div id="myDIV" >
+    <f>
+        <span>Td 11</span>
+        <span>Td 12</span>
+        <span>Td 13</span>
+     </f>
+     <f>
+        <span>Td 21</span>
+        <span>Td 22</span>
+        <span>Td 23</span>
+     </f>
+
+</div>
+<h1>The display- grid property</h1>
+
+<div id="myDIV" >
+    <g>
+        <span class="one">Td 11</span>
+        <span>Td 12</span>
+        <span>Td 13</span>
+     </g>
+     <g>
+        <span>Td 21</span>
+        <span class="two">Td 22</span>
+        <span>Td 23</span>
+
+     </g>
+     <h1> displaying flex property with div box</h1>
+     <div id="myDIV" >
+        <f>
+            <div class="box box1">block 1</div>
+            <div class="box box2">block 2</div>
+            <div class="box">block 3</div>
+            <div class="box">block 4</div>
+            <div class="box">block 5</div>
+            <div class="box">block 6</div>
+            <div class="box">block 7</div>
+
+         </f>
+         <f><div class="box box1">block 1</div>
+            <div class="box box2">block 2</div>
+            <div class="box">block 3</div>
+            <div class="box">block 4</div>
+            <div class="box">block 5</div>
+            <div class="box">block 6</div>
+            <div class="box">block 7</div>
+            <div class="box">block 8</div>
+            <div class="box">block 9</div>
+         </f>
+    
+    </div>
+</div>
+
+</body>
+</html>

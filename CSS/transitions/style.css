@@ -1,0 +1,46 @@
+.main{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+    gap : 5px;
+    height:auto;
+  
+}
+.box{
+    background-color: red;
+   height: 100px;
+   width:180px;
+   margin :5px;
+
+}
+.box1:hover{
+    background-color: blue;
+    height:200px ;
+    width:200px;
+    border-radius: 50%;
+    /* transition-duration: 5s; 
+    transition-property:all;
+    transition-timing-function: ease-in;
+    transition-delay: 1s; */
+    transition:all 1s ease 0s;
+    /* property,duration,timing function,delay,*/
+       /*linear-expands speed linearly ,ease-in initially fast then slow,ease-out initiially slow then fast*/
+    /* transition:all means---> background-color height width border-radius; */
+    transform: scale(1.05);
+    transform: rotate(20deg);
+   
+    
+}
+.boxx{
+    background-color: rgb(30, 154, 59);
+ 
+    border-radius: 50%;
+    transition:all 5s ease 0s;
+}
+.boxx:hover{
+    background-color: blue;
+ 
+    border-radius: 50%;
+    transition:all 5s ease 0s;
+    transform: translate(200px ,-150px) scale(1.25);
+    
+}
