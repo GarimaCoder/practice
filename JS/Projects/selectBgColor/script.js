@@ -52,7 +52,7 @@ function changemode()
     // document.body.style.color="red"
     document.body.classList.toggle('dark')
 }
-changecolor()
+function changecolor()
 {
    let select=document.getElementById('colors').value
    if(select!=="")
