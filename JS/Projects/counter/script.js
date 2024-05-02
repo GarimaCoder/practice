@@ -5,7 +5,7 @@ function incr()
     if((c<25))
     {
     c++;
-    document.getElementById("count").textContent=c;
+    document.querySelectorAll(".para")[0].textContent=c;
     
     if(c%2==0)
     document.getElementById("OddEven").innerHTML="even";
@@ -21,9 +21,9 @@ function decr()
     c--;
     document.getElementById("count").textContent=c;
     if(c%2==0)
-    document.getElementById("OddEven").innerHTML="even";
+    document.getElementById("OddEven").innerText="even";
 else
-document.getElementById("OddEven").innerHTML="odd";
+document.getElementById("OddEven").innerText="odd";
 
 }
 else{
@@ -33,5 +33,5 @@ function reset()
 {
     c=0;
     document.getElementById("count").textContent=c;
-    document.getElementById("OddEven").innerHTML="even";
+    document.getElementById("OddEven").innerText="even";
 }

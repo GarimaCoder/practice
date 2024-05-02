@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Div label Odd Even-->
+    <div id="OddEven" style="position: absolute; top: 15vh; right: 30vw">
+      <p id="OddEven"></p>
+    </div>
+    <!-- Main div-->
+    <div id="main">
+          <!-- toggle-->
+      <div class="toggle" style="position: absolute; top: 0px; right: 0px">
+        <button onclick="changemode()" id="btn">Toggle</button>
+      </div>
+        <!-- Dropdown -->
+      <div class="dropdown" style="position: absolute; top: 10px; left: 10px">
+        <label for="colors">Choose a color:</label>
+
+        <select name="colors" id="colors" onclick="changecolor()">
+            <option value="">Select the Colors</option>
+          <option value="green" style="background-color: green">Green</option>
+          <option value="purple" style="background-color: purple">Purple</option>
+          <option value="yellow" style="background-color: yellow">Yellow</option>
+          <option value="blue" style="background-color: blue">Blue</option>
+          <option value="orange" style="background-color: orange">Orange</option>
+          <option value="red" style="background-color:red">Red</option>
+          <option value="yellowgreen" style="background-color: yellowgreen">Yellow Green</option>
+        </select>
+      </div>
+        <!-- Counter Div-->
+      <div class="counter">
+        <p id="count" class="para">0</p>
+        <hr style="width: 100%; text-align: left; margin-left: 0" />
+        <div class="butttons">
+          <button onclick="incr()">+</button>
+          <button onclick="decr()">-</button>
+          <button onclick="reset()">reset</button>
+        </div>
+      </div>
+    </div>
+    <button onclick="change()" style="position: absolute; top: 10px; left: 40vw">BackGround Color Change</button><br />
+
+    <script src="script.js"></script>
+  </body>
+</html>

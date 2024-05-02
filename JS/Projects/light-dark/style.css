@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(192, 209, 166);
+}
+.dark{
+    background-color: rgb(26, 24, 24);
+    color: white;
+}
+.light{
+    background-color: rgb(250, 250, 250);
+    color: rgb(24, 23, 23);
+}
